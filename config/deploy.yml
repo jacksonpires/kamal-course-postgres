@@ -47,7 +47,7 @@ env:
     - RAILS_MASTER_KEY
     - POSTGRES_PASSWORD # Comes from the .kamal/secrets file
   clear:
-    DB_HOST: servicename-postgres
+    DB_HOST: kamal-course-postgres-postgres
     POSTGRES_USER: kamal_course_postgres
     POSTGRES_DB: kamal_course_postgres_production
 
