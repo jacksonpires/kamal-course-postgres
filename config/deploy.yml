@@ -10,7 +10,7 @@ image: jacksonpires/kamal-course-postgres
 servers:
   web:
     - <%= ENV["SERVER_IP"] %>
-  options:
+    options:
       network: kamal
   # job:
   #   hosts:
