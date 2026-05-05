@@ -91,7 +91,7 @@ production:
     database: kamal_course_postgres_production
     username: kamal_course_postgres
     password: <%= ENV["POSTGRES_PASSWORD"] %>
-    host: 127.0.0.1
+    host: postgres
     port: 5432
   cache:
     <<: *primary_production
