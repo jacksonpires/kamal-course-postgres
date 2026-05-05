@@ -86,7 +86,7 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    url: DATABASE_URL: postgres://kamal_course_postgres:<%= ENV["POSTGRES_PASSWORD"] %>@postgres:5432/kamal_course_postgres_production
+    url: postgres://kamal_course_postgres:<%= ENV["POSTGRES_PASSWORD"] %>@postgres:5432/kamal_course_postgres_production
   cache:
     <<: *primary_production
     database: kamal_course_postgres_production_cache
