@@ -131,6 +131,6 @@ accessories:
         POSTGRES_USER: kamal_course_postgres
         POSTGRES_DB: kamal_course_postgres_production
       secret:
-        - POSTGRES_PASSWORD # Comes from the .kamal/secrets file
+        - POSTGRES_PASSWORD # .kamal/secrets file
     directories:
       - data:/var/lib/postgresql/data
