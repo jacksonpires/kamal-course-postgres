@@ -86,11 +86,7 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    adapter: postgresql
-    encoding: unicode
-    database: kamal_course_postgres_production
-    username: kamal_course_postgres
-    password: <%= ENV["POSTGRES_PASSWORD"] %>
+    url: DATABASE_URL: postgres://kamal_course_postgres:<%= ENV["POSTGRES_PASSWORD"] %>@postgres:5432/kamal_course_postgres_production
   cache:
     <<: *primary_production
     database: kamal_course_postgres_production_cache
